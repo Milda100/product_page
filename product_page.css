@@ -1,0 +1,163 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy, serif;
+    color:rgb(255, 0, 183);
+    background-color: #fed9d9;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ea83d5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+   
+}
+
+#header-img {
+    max-width: 110px;
+    height: auto;
+    
+}
+
+h1 {
+    font-size: 200%;
+}
+
+
+ul {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+    background-color: #4f2947;
+    
+  }
+
+  li {
+    display: inline-block;
+    }
+
+  li a {
+    display: inline-block;
+    color:rgb(255, 0, 183);
+    padding: 40px 30px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  .title {
+    font-size: 200%;
+    text-align: center;
+    padding: 110px 0px 0px 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+ p, h2 {
+    padding: 10px 0;
+ }
+
+  .ice-cream-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 80px 20px 20px 20px;
+    padding: 0;
+  }
+
+  #video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    border: none;
+    width: 640px;
+    height: 500px;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  
+  .scoop {
+    margin: 80px 0 80px 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #4f2947;
+    
+  }
+
+  .product-name {
+    background-color: #4f2947;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .dropdown,  .button, .form {
+    color: rgb(255, 0, 183);
+    background-color: #4f2947;
+    font-family: fantasy, serif;
+  }
+
+  .button {
+    padding: 10px ;
+  }
+
+  .dropdown {
+    padding: 10px 0;
+  }
+
+  .form {
+    display: flex;
+    padding: 20px 10px;
+  }
+
+  input {
+    background-color: #fed9d9;
+  }
+
+      @media screen and (max-width: 700px) {
+        #header, #header-img  {   
+          flex-direction: column;
+          text-align: center;
+        }
+
+        p, h2 {
+          text-align: center;      
+        }
+
+        #video {
+          width: 340px;
+          height: 250px;
+        }
+
+        .grid2 {
+          grid-template-columns: 1fr;
+        }
+
+        .form {
+          flex-direction: column;
+          text-align: left;
+        }
+      }

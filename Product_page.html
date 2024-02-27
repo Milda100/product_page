@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boozy Cone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product_page.css">
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <img 
+        src="https://as1.ftcdn.net/v2/jpg/02/32/59/98/1000_F_232599886_typki5F4H3mPBz2hTVnLzKaFq0jFsPBc.jpg"
+        alt="Ice Cream logo"
+        id="header-img"
+        />
+        <h1>Boozy Cone</h1>
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#Flavours" class="nav-link">Flavours</a></li>
+            <li><a href="#How it's made" class="nav-link">How it's made</a></li>
+            <li><a href="#Prices" class="nav-link">Prices</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="Flavours">
+        <header class="title">Flavours</header>
+        <div class="grid">
+        <img 
+        src="https://images.pexels.com/photos/1625235/pexels-photo-1625235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Unicorn ice cream"
+        class="ice-cream-img"
+        />
+        <h2>Unicorn ice cream</h2>
+        <p>Melting in mouth flavours mach well with each other.</p>
+       <img
+        src="https://images.pexels.com/photos/3017265/pexels-photo-3017265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Chocolate sprinkle ice cream"
+        class="ice-cream-img"
+        />
+        <h2>Chocolate ice cream</h2>
+        <p>Chocolate flavoured ice cream is a classic! Great dense flavour and it comes with sprinkles.</p>
+        <img
+        src="https://images.pexels.com/photos/919273/pexels-photo-919273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Chocolate chip mint ice cream"
+        class="ice-cream-img"
+        />
+        <h2>Chocolate chip mint ice cream</h2>
+        <p>Perfect for a hot summer day. Very refreshing and comes with a cookie.</p>
+      </div>
+      </section>
+      <section id="How it's made">
+        <header class="title">How it's made</header>
+        <iframe 
+        src="https://www.youtube.com/embed/bDDazMFfW2g"
+        id="video"
+        ></iframe>
+      </section>
+      <section id="Prices">
+        <header class="title">Prices</header>
+        <div class="grid2">
+          <div class="scoop">
+            <h2 class="product-name">One scoop</h2>
+            <p>$3</p>
+            <label for="pick-flavour">Select flavour:
+              <select id="pick-flavour" name="pick-flavour" class="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Unicorn ice cream</option>
+                <option value="2">Chocolate ice cream</option>
+                <option value="3">Chocolate chip mint ice cream</option>
+              </select>
+            </label>
+            <button type="submit" value="$3" class="button">Add to cart</button>
+          </div>
+          <div class="scoop">
+            <h2 class="product-name">Two scoops</h2>
+            <p>$5</p>
+            <label for="pick-flavour">Select flavour:
+              <select id="pick-flavour" name="pick-flavour" class="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Unicorn ice cream</option>
+                <option value="2">Chocolate ice cream</option>
+                <option value="3">Chocolate chip mint ice cream</option>
+              </select>
+            </label>
+            <button type="submit" value="$5" class="button">Add to cart</button>
+          </div>
+          <div class="scoop">
+            <h2 class="product-name">Pint</h2>
+            <p>$10</p>
+            <label for="pick-flavour">Select flavour:
+              <select id="pick-flavour" name="pick-flavour" class="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Unicorn ice cream</option>
+                <option value="2">Chocolate ice cream</option>
+                <option value="3">Chocolate chip mint ice cream</option>
+              </select>
+            </label>
+            <button type="submit" value="$10" class="button">Add to cart</button>
+            </div>
+        </div>
+      </section>
+      <section>
+        <form method="post" action="https://www.freecodecamp.com/email-submit" id="form" class="form">
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="johnsmith@gmail.com" required /></label>
+            <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]){8,}" required /></label>
+            <input id="submit" type="submit" class="button"></input>
+        </form>
+      </section>
+    </main> 
+  </body>
